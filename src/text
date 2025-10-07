@@ -1,0 +1,19 @@
+in player 1, namn, symbol (ev möjlighet att ändra), score
+in player 2 namn, symbol (ev möjlighet att ändra), score
+vem spelar = currentPlayer
+
+spelplan
+9 rutor med siffror
+
+byt siffra på spelplan mot symbol
+
+kolla vinst (gå igenom alla vinnande kombinationer, // TODO smartare lösning???)
+    nej: fortsätt
+    ja: skriv meddelande
+    score +1
+    börja om
+kolla siffror/platser kvar?
+    oavgjort: börja om
+    ja: fortsätt
+
+(spela igen?)
