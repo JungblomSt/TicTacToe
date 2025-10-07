@@ -1,4 +1,4 @@
-in player 1, namn, symbol (ev möjlighet att ändra), score
+in player 1, namn, symbol (ev möjlighet att ändra), score //ToDo möjlighet att välja symbol
 in player 2 namn, symbol (ev möjlighet att ändra), score
 vem spelar = currentPlayer
 
@@ -16,4 +16,8 @@ kolla siffror/platser kvar?
     oavgjort: börja om
     ja: fortsätt
 
-(spela igen?)
+//ToDo spela igen?
+
+//ToDo städa Player
+
+//ToDo städa InputHandler

@@ -44,8 +44,9 @@ public class TicTacToe {
     private static void welcomeInstructions(Player player1, Player player2) {
         System.out.println("Welcome " + player1.getName() + " and " + player2.getName() + "!");
         System.out.println("You are now going to play a game of TicTacToe!");
-        System.out.println("Be the first to get 3 of your symbol in a row — horizontally \u2190 \u2192, vertically \u2191 \u2193, or diagonally \u2199 \u2196.");
+        System.out.println();
         System.out.println("Players take turns placing their symbol in a square.");
+        System.out.println("Be the first to get 3 of your symbol in a row — horizontally \u2190 \u2192, vertically \u2191 \u2193, or diagonally \u2199 \u2196.");
         System.out.println("First to 3 in a row wins.");
         System.out.println("If all 9 squares are filled with no winner, it’s a draw, and you can try again.");
     }
