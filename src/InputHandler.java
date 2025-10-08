@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class InputHandler {
-    public static Scanner sc;
+    public static Scanner sc = new Scanner(System.in);
 
     public InputHandler() {
     }
@@ -30,9 +30,5 @@ public class InputHandler {
             }
             System.out.println("Wrong input write a number " + min + "-" + max);
         }
-    }
-
-    static {
-        sc = new Scanner(System.in);
     }
 }

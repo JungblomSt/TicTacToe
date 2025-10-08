@@ -3,13 +3,7 @@ public class Player {
     private int score;
     private char symbol;
 
-//    Om man behöver skriva in ett score
-//    public Player(String name, int score, char symbol) {
-//        this.name = name;
-//        this.score = score;
-//        this.symbol = symbol;
-//    }
-
+    //constructors
     public Player(String name, char symbol) {
         this.name = name;
         this.symbol = symbol;
@@ -18,26 +12,16 @@ public class Player {
 
     public Player(String name) {
         this.name = name;
-        this.symbol = name.toUpperCase().charAt(0); //används ej just nu, Första bokstaven i namnet istället för X och O.
+        this.symbol = name.toUpperCase().charAt(0); //Not in use for now, first letter in name instead of X and O.
         this.score = 0;
     }
+    //functions
     public static String addPlayerName() {
         System.out.println("Write the name of a player: ");
-        //    String playerName = InputHandler.getString();
-        //        char playerSymbol = playerName.charAt(0);
-        //        int playerScore = 0;
-        //        players.add(new Player(playerName));
         return InputHandler.getString();
     }
 
-//    public void nameQuestion() {
-//        System.out.println("Write the name of the first player: ");
-//        public String player1 = new Player(InputHandler.getString());
-//
-//        System.out.println("Write the name of the second player: ");
-//        player2 = InputHandler.getString();
-//    }
-
+    //get and set
     public String getName() {
         return name;
     }

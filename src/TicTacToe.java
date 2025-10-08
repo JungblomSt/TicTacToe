@@ -29,8 +29,6 @@ public class TicTacToe {
                 System.out.println("The number is taken, try with an other one!");
                 continue; //dont switch players
             }
-//                checkWinner(currentPlayer, player1, player2);
-//                checkDraw();
 
             if (!checkWinner(currentPlayer, player1, player2) || !checkDraw()) {
                 break;
@@ -52,7 +50,7 @@ public class TicTacToe {
     }
 
     // Switch player, more code but easy to read (for me)
-    private static Player switchPlayer(Player currentPlayer, Player player1, Player player2) {
+    private Player switchPlayer(Player currentPlayer, Player player1, Player player2) {
         if (currentPlayer == player1){
             currentPlayer = player2;
         } else {
@@ -60,7 +58,7 @@ public class TicTacToe {
         }
         return currentPlayer;
 
-        //  Altenative sulution.
+        //  Alternative solution.
         //    private static Player switchPlayer(Player currentPlayer, Player player1, Player player2) {
         //        return currentPlayer == player1 ? player2 : player1;
         //    }
@@ -90,13 +88,12 @@ public class TicTacToe {
 
         }
     return  true;
-
     }
+
     public void printScore(Player player1, Player player2) {
         System.out.println(player1.getName().toUpperCase() + " Score: "  + player1.getScore());
         System.out.println(player2.getName().toUpperCase() + " Score: "  + player2.getScore());
     }
-
     //ToDo change if you want to be able to change symbol
     //check if the board is full
     private boolean checkDraw() {
@@ -112,32 +109,16 @@ public class TicTacToe {
         }
         return true;
     }
-    private boolean playAgain() {
-        // spela igen?
-        //j/n + kontroll
-        return true;
-    }
-
 
     private static char[] initPlayField() {
-        //Make the playfeald
+        //Make the playfeald array
         char[] playField = new char[9];
         //fill the playfeald with numbers
-        for (int i = 0; i < 9; i++) {
+        for (int i = 0; i < playField.length; i++) {
             playField[i] = (char) ('1' + i);
         }
         return playField;
     }
-
-//        System.out.println("Here is the playfeald:");
-//        for (int i = 0; i < playField.length; i++) {
-//            for (int j = 0; j < playField[i].length; j++) {
-//                System.out.print(playField[i][j] + " ");
-//            }
-//            System.out.println();
-//        }
-
-//        char[] playField = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 
     //wrote the playfield this way so it was easy to read and understand, for me
     public void printPlayField(char[] playField) {

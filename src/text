@@ -7,7 +7,7 @@ spelplan
 
 byt siffra på spelplan mot symbol
 
-kolla vinst (gå igenom alla vinnande kombinationer, // TODO smartare lösning???)
+kolla vinst (gå igenom alla vinnande kombinationer
     nej: fortsätt
     ja: skriv meddelande
     score +1
@@ -17,7 +17,3 @@ kolla siffror/platser kvar?
     ja: fortsätt
 
 //ToDo spela igen?
-
-//ToDo städa Player
-
-//ToDo städa InputHandler
