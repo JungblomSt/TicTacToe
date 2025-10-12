@@ -94,7 +94,6 @@ public class TicTacToe {
         System.out.println(player1.getName().toUpperCase() + " Score: "  + player1.getScore());
         System.out.println(player2.getName().toUpperCase() + " Score: "  + player2.getScore());
     }
-    //ToDo change if you want to be able to change symbol
     //check if the board is full
     private boolean checkDraw() {
         int moves = 0;
